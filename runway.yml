@@ -5,7 +5,7 @@ import torch
 use_gpu = True if torch.cuda.is_available() else False
 
 # Load the model from the Pytorch Hub
-model = torch.hub.load('facebookresearch/pytorch_GAN_zoo:hub',
+model = torch.hub.load ('facebookresearch/pytorch_GAN_zoo:hub',
                        'PGAN', model_name='celebAHQ-512',
                        pretrained=True, useGPU=use_gpu)
 
